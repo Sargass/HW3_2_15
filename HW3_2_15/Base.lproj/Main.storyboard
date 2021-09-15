@@ -117,6 +117,7 @@
                         <outlet property="GreenSlider" destination="vl3-VK-C2M" id="021-OA-e58"/>
                         <outlet property="RedLabel" destination="Yc3-fg-mhx" id="n4G-wL-HO5"/>
                         <outlet property="RedSlider" destination="k9U-IB-ba9" id="QaG-TP-oz3"/>
+                        <outlet property="ViewColor" destination="Vaq-2Z-6Fv" id="vTe-42-rUd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
