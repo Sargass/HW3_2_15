@@ -31,15 +31,58 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewCurrent()
         
-        ViewColor.layer.cornerRadius = 20
-      //  ViewColor.layer.backgroundColor = 0
-        
+        redSliderView()
+        blueSliderView()
+        greenSliderView()
+
     }
     
-//    func colorFromSliders() -> UIColor? {
+    func redSliderView() {
+        RedSlider.value = 125
+        RedSlider.minimumValue = 0
+        RedSlider.maximumValue = 255
+        RedSlider.minimumTrackTintColor = .red
+    }
     
- //   }
-
+    func blueSliderView() {
+        BlueSlider.value = 125
+        BlueSlider.minimumValue = 0
+        BlueSlider.maximumValue = 255
+        BlueSlider.minimumTrackTintColor = .blue
+    }
+    
+    func greenSliderView(){
+        GreenSlider.value = 125
+        GreenSlider.minimumValue = 0
+        GreenSlider.maximumValue = 255
+        GreenSlider.minimumTrackTintColor = .green
+    }
+    
+    func viewCurrent(){
+        ViewColor.layer.cornerRadius = 20
+        ViewColor.layer.backgroundColor = .init(red: currentRed, green: currentGreen, blue: currentBlue, alpha: 1)
+    //    ViewColor.backgroundColor = view.backgroundColor.
+    }
+    
+    @IBAction func redSliderAction() {
+        RedLabel.text = String(Int(RedSlider.value))
+        currentRed = CGFloat(RedSlider.value)
+        viewCurrent()
+    }
+    
+    @IBAction func blueSliderAction() {
+        BlueLabel.text = String(Int(BlueSlider.value))
+        currentBlue = CGFloat(BlueSlider.value)
+        viewCurrent()
+    }
+    
+    @IBAction func greenSliderAction() {
+        GreenLabel.text = String(Int(GreenSlider.value))
+        currentGreen = CGFloat(GreenSlider.value)
+        viewCurrent()
+    }
+    
 }
 
