@@ -63,7 +63,6 @@ class ViewController: UIViewController {
     func viewCurrent(){
         ViewColor.layer.cornerRadius = 20
         ViewColor.layer.backgroundColor = .init(red: currentRed, green: currentGreen, blue: currentBlue, alpha: 1)
-    //    ViewColor.backgroundColor = view.backgroundColor.
     }
     
     @IBAction func redSliderAction() {
