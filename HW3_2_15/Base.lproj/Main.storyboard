@@ -81,22 +81,22 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0it-ZD-Gh4" userLabel="SliderStack View">
                                         <rect key="frame" x="107" y="0.0" width="181" height="98"/>
                                         <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k9U-IB-ba9" userLabel="RedHorizontalSlider">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k9U-IB-ba9" userLabel="RedHorizontalSlider">
                                                 <rect key="frame" x="-2" y="0.0" width="185" height="31"/>
                                                 <connections>
-                                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="OkI-8R-qZC"/>
+                                                    <action selector="changesOfSladers" destination="BYZ-38-t0r" eventType="valueChanged" id="HhD-SU-55F"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vl3-VK-C2M" userLabel="GreebHorizontalSlider">
                                                 <rect key="frame" x="-2" y="34" width="185" height="31"/>
                                                 <connections>
-                                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Hew-59-iSq"/>
+                                                    <action selector="changesOfSladers" destination="BYZ-38-t0r" eventType="valueChanged" id="VIt-rS-ILM"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="niw-Lu-NSZ" userLabel="BlueHorizontalSlider">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="niw-Lu-NSZ" userLabel="BlueHorizontalSlider">
                                                 <rect key="frame" x="-2" y="68" width="185" height="31"/>
                                                 <connections>
-                                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="uDO-HZ-1TP"/>
+                                                    <action selector="changesOfSladers" destination="BYZ-38-t0r" eventType="valueChanged" id="K3d-kY-1gb"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -116,13 +116,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="BlueLabel" destination="1Ot-Ss-02H" id="SVW-51-enx"/>
-                        <outlet property="BlueSlider" destination="niw-Lu-NSZ" id="4of-ei-u4p"/>
-                        <outlet property="GreenLabel" destination="A0i-La-Iw7" id="XFH-LL-O2D"/>
-                        <outlet property="GreenSlider" destination="vl3-VK-C2M" id="021-OA-e58"/>
-                        <outlet property="RedLabel" destination="Yc3-fg-mhx" id="n4G-wL-HO5"/>
-                        <outlet property="RedSlider" destination="k9U-IB-ba9" id="QaG-TP-oz3"/>
-                        <outlet property="ViewColor" destination="Vaq-2Z-6Fv" id="vTe-42-rUd"/>
+                        <outlet property="blueLabel" destination="1Ot-Ss-02H" id="SVW-51-enx"/>
+                        <outlet property="blueSlider" destination="niw-Lu-NSZ" id="4of-ei-u4p"/>
+                        <outlet property="greenLabel" destination="A0i-La-Iw7" id="XFH-LL-O2D"/>
+                        <outlet property="greenSlider" destination="vl3-VK-C2M" id="021-OA-e58"/>
+                        <outlet property="redLabel" destination="Yc3-fg-mhx" id="n4G-wL-HO5"/>
+                        <outlet property="redSlider" destination="k9U-IB-ba9" id="QaG-TP-oz3"/>
+                        <outlet property="viewColor" destination="Vaq-2Z-6Fv" id="vTe-42-rUd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
